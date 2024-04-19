@@ -11,19 +11,19 @@ const experience = "of Web-App Experience";
 
 const aboutList = [
     {
-        imgUrl: '/src/assets/images/about/icon/01.jpg',
+        imgUrl: '../../public/about/icon/01.jpg',
         imgAlt: 'about icon rajibraj91 rajibraj',
         title: 'Expert in Web App Development',
         desc: 'We are a team of three highly skilled developers specializing in web application development. With our expertise and experience, we offer top-notch implementation to give you your dream web app.',       
     },
     {
-        imgUrl: '/src/assets/images/about/icon/02.png',
+        imgUrl: '../../public/about/icon/02.png',
         imgAlt: 'about icon rajibraj91 rajibraj',
         title: 'Leaders in Tech Innovation',
         desc: "In addition to our proficiency in web app development, we are proud graduates of Texas State University, slated to earn our degrees in May 2024. Armed with a stack of modern technologies in our toolkit, we are poised to revolutionize the tech industry. Our relentless pursuit of innovation and unwavering commitment to excellence make us an ideal partner for those seeking groundbreaking digital solutions.",
     },
     {
-        imgUrl: '/src/assets/images/about/icon/03.jpg',
+        imgUrl: '../../public/about/icon/03.jpg',
         imgAlt: 'about icon rajibraj91 rajibraj',
         title: 'Get in Touch with Us Online',
         desc: "Connect with us online, and let's collaborate to develop pioneering web applications. Our team is dedicated to transforming your ideas into impactful digital solutions, bringing your vision to life.",
