@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from "../assets/images/logo/logo.png";
+import logo from "../../src/assets/images/logo/logo.png";
 import { AuthContext } from '../context/AuthProvider';
 import '../customcss/Nav.css';
 import { AiOutlineLogout } from "react-icons/ai";
@@ -32,7 +32,7 @@ const NavBar = () => {
     }, [user]);
 
     const checkAdmin = async (email) => {
-      axios.get(`http://localhost:4000/users/admin/${email}`)
+      axios.get(`https://commerce-app-adminserver.onrender.com/users/admin/${email}`)
       .then(res => {
           console.log(res.data.admin);
           setIsAdmin(res.data.admin);

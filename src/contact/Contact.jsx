@@ -55,7 +55,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5050/send-email', formData);
+      const response = await axios.post('https://commerce-app-stripeserver.onrender.com/send-email', formData);
       console.log(response.data);
       // Reset form after successful submission if needed
       if (response.data.success){

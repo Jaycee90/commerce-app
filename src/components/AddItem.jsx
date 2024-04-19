@@ -19,14 +19,14 @@ const AddItem = () => {
     const addItem = async () => {
         try {
             // Fetch existing data from the server
-            const response = await axios.get('http://localhost:5050/products');
+            const response = await axios.get('https://commerce-app-stripeserver.onrender.com/products');
             const existingData = response.data;
     
             // Append the new item to the existing data
             const newData = [...existingData, formData];
     
             // Update the data on the server
-            await axios.post('http://localhost:5050/updateData', newData);
+            await axios.post('https://commerce-app-stripeserver.onrender.com/updateData', newData);
     
             console.log('Item added successfully.');
         } catch (error) {

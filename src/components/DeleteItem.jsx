@@ -12,7 +12,7 @@ const DeleteItem = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Send a DELETE request to the server to delete the item with the specified ID
-    axios.delete(`http://localhost:5050/deleteItem/${itemId}`)
+    axios.delete(`https://commerce-app-stripeserver.onrender.com/deleteItem/${itemId}`)
       .then(response => {
         setMessage(response.data.message);
       })

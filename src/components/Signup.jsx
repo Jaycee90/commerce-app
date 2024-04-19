@@ -28,7 +28,7 @@ export const Signup = () => {
             const name = user.displayName;
     
             // Send user data to backend
-            const response = await axios.post('http://localhost:4000/users', {
+            const response = await axios.post('https://commerce-app-adminserver.onrender.com/users', {
                 name,
                 email,
                 role: 'user' // Default role
@@ -70,7 +70,7 @@ export const Signup = () => {
                     navigate(from, {replace: true})
                 })
                 // Send user data to backend
-                const response = await axios.post('http://localhost:4000/users', {
+                const response = await axios.post('https://commerce-app-adminserver.onrender.com/users', {
                     name,
                     email,
                     role: 'user' // Default role

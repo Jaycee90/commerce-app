@@ -11,7 +11,7 @@ const ForgotPassword = () => {
 
     const handleResetPassword = async (event) => {
         event.preventDefault();
-        axios.post('http://localhost:4000/users/reset-password', { email })
+        axios.post('https://commerce-app-adminserver.onrender.com/users/reset-password', { email })
             .then(response => {
                 setMessage('If an account with that email exists, we have sent an email to reset your password.');
                 setTimeout(() => navigate('/'), 5000); // Redirects to homepage after 5 seconds

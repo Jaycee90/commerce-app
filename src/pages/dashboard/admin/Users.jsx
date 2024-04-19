@@ -7,7 +7,7 @@ const Users = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const res = await fetch('http://localhost:4000/users');
+        const res = await fetch('https://commerce-app-adminserver.onrender.com/users');
         if (res.ok) {
           const data = await res.json();
           setUsers(data);
@@ -25,7 +25,7 @@ const Users = () => {
   const handleDelete = async (userId) => {
     console.log(userId);
     try {
-      const res = await fetch(`http://localhost:4000/users/${userId}`, {
+      const res = await fetch(`https://commerce-app-adminserver.onrender.com/users/${userId}`, {
         method: 'DELETE'
       });
       if (res.ok) {

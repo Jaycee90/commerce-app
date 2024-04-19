@@ -53,7 +53,7 @@ const Orders = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const response = await fetch('http://localhost:4000/api/transactions');
+        const response = await fetch('https://commerce-app-adminserver.onrender.com/api/transactions');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
@@ -75,7 +75,7 @@ const Orders = () => {
   const handleDelete = async (orderId) => {
     // Delete order from the database
     try {
-      const response = await fetch(`http://localhost:4000/api/transactions/${orderId}`, {
+      const response = await fetch(`https://commerce-app-adminserver.onrender.com/api/transactions/${orderId}`, {
         method: 'DELETE',
       });
       if (!response.ok) throw new Error('Deletion failed');

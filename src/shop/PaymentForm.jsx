@@ -44,7 +44,7 @@ const PaymentForm = ({orderTotal}) => {
 
         try {
             // Send cart data to your backend
-            const response = await fetch('http://localhost:4000/api/transactions', {
+            const response = await fetch('https://commerce-app-adminserver.onrender.com/api/transactions', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -75,7 +75,7 @@ const PaymentForm = ({orderTotal}) => {
         if (!error) {
             try {
                 const {id} = paymentMethod
-                const response = await axios.post("http://localhost:5050/payment", {
+                const response = await axios.post("https://commerce-app-stripeserver.onrender.com/payment", {
                     amount: orderTotal * 1000,
                     id,
                     return_url: window.location.href

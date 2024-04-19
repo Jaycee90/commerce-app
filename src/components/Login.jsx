@@ -27,7 +27,7 @@ const Login = () => {
     const [email, setEmail] = useState('');
 
     const checkAdmin = async (email) => {
-        axios.get(`http://localhost:4000/users/admin/${email}`)
+        axios.get(`https://commerce-app-adminserver.onrender.com/users/admin/${email}`)
         .then(res => {
             console.log(res.data);
         })
