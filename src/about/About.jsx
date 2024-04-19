@@ -44,7 +44,7 @@ const About = () => {
                                 <img src="/src/assets/images/about/Jayce.jpg" style={{ width: "300px", height: "300px", borderRadius: "50%" }} alt="" className="img-fluid"/>
                             </div>
                             <div className='mb-8 flex flex-wrap justify-center md:justify-start'>
-                                <img src="/src/assets/images/about/colby.png" style={{ width: "300px", height: "300px", borderRadius: "50%" }} alt="" className="img-fluid mr-4 mb-4"/>
+                                <img src="../../public/about/colby.png" style={{ width: "300px", height: "300px", borderRadius: "50%" }} alt="" className="img-fluid mr-4 mb-4"/>
                                 <img src="/src/assets/images/about/Isaiah.png" style={{ width: "300px", height: "300px", borderRadius: "50%" }} alt="" className="img-fluid ml-4 mb-4"/>
                             </div>
                             <div className='text-center'>
