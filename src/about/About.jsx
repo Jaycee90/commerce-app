@@ -41,7 +41,7 @@ const About = () => {
                         {/* First Column */}
                         <div className='flex flex-col items-center md:text-center'>
                             <div className='mb-8'>
-                                <img src="/about/Jayce.jpg" style={{ width: "300px", height: "300px", borderRadius: "50%" }} alt="" className="img-fluid"/>
+                                <img src="/about/Jayce.png" style={{ width: "300px", height: "300px", borderRadius: "50%" }} alt="" className="img-fluid"/>
                             </div>
                             <div className='mb-8 flex flex-wrap justify-center md:justify-start'>
                                 <img src="/about/colby.png" style={{ width: "300px", height: "300px", borderRadius: "50%" }} alt="" className="img-fluid mr-4 mb-4"/>
