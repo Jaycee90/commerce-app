@@ -11,19 +11,19 @@ const experience = "of Web-App Experience";
 
 const aboutList = [
     {
-        imgUrl: '../../public/about/icon/01.jpg',
+        imgUrl: '/about/icon/01.jpg',
         imgAlt: 'about icon rajibraj91 rajibraj',
         title: 'Expert in Web App Development',
         desc: 'We are a team of three highly skilled developers specializing in web application development. With our expertise and experience, we offer top-notch implementation to give you your dream web app.',       
     },
     {
-        imgUrl: '../../public/about/icon/02.png',
+        imgUrl: '/about/icon/02.png',
         imgAlt: 'about icon rajibraj91 rajibraj',
         title: 'Leaders in Tech Innovation',
         desc: "In addition to our proficiency in web app development, we are proud graduates of Texas State University, slated to earn our degrees in May 2024. Armed with a stack of modern technologies in our toolkit, we are poised to revolutionize the tech industry. Our relentless pursuit of innovation and unwavering commitment to excellence make us an ideal partner for those seeking groundbreaking digital solutions.",
     },
     {
-        imgUrl: '../../public/about/icon/03.jpg',
+        imgUrl: '/about/icon/03.jpg',
         imgAlt: 'about icon rajibraj91 rajibraj',
         title: 'Get in Touch with Us Online',
         desc: "Connect with us online, and let's collaborate to develop pioneering web applications. Our team is dedicated to transforming your ideas into impactful digital solutions, bringing your vision to life.",
@@ -41,11 +41,11 @@ const About = () => {
                         {/* First Column */}
                         <div className='flex flex-col items-center md:text-center'>
                             <div className='mb-8'>
-                                <img src="/src/assets/images/about/Jayce.jpg" style={{ width: "300px", height: "300px", borderRadius: "50%" }} alt="" className="img-fluid"/>
+                                <img src="/about/Jayce.jpg" style={{ width: "300px", height: "300px", borderRadius: "50%" }} alt="" className="img-fluid"/>
                             </div>
                             <div className='mb-8 flex flex-wrap justify-center md:justify-start'>
-                                <img src="../../public/about/colby.png" style={{ width: "300px", height: "300px", borderRadius: "50%" }} alt="" className="img-fluid mr-4 mb-4"/>
-                                <img src="/src/assets/images/about/Isaiah.png" style={{ width: "300px", height: "300px", borderRadius: "50%" }} alt="" className="img-fluid ml-4 mb-4"/>
+                                <img src="/about/colby.png" style={{ width: "300px", height: "300px", borderRadius: "50%" }} alt="" className="img-fluid mr-4 mb-4"/>
+                                <img src="/about/Isaiah.png" style={{ width: "300px", height: "300px", borderRadius: "50%" }} alt="" className="img-fluid ml-4 mb-4"/>
                             </div>
                             <div className='text-center'>
                                 <h3 className='mb-2'>{year}</h3>
