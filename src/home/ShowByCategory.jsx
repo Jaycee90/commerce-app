@@ -29,7 +29,7 @@ const ShowByCategory = () => {
   // Filtering based on category.
   const filterItem = (categItem) => {
     // Fetch data from products.json again
-    fetch("/src/products.json")
+    fetch("/products.json")
       .then(response => response.json())
       .then(data => {
         // If categItem is undefined, set items to the original list
