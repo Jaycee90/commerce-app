@@ -11,7 +11,7 @@ const ShowByCategory = () => {
     // This will extract all items from inventory.
     useEffect(() => {
     // Fetch data from products.json
-    fetch("/src/products.json")
+    fetch("/products.json")
         .then(response => response.json())
         .then(data => {
             // Extract first all items for each category
@@ -47,8 +47,8 @@ const ShowByCategory = () => {
   return (
     <div className='course-section style-3 padding-tb'>
       {/* Our shapes */}
-      <div className='course-shape one'><img src="/src/assets/images/shape-img/icon/01.png" alt="" /></div>
-      <div className="course-shape two"><img src="/src/assets/images/shape-img/icon/02.png" alt="" /></div>
+      <div className='course-shape one'><img src="/images/icon/01.png" alt="" /></div>
+      <div className="course-shape two"><img src="/images/icon/02.png" alt="" /></div>
   
       {/* Main section */}
       <div className='container'>
