@@ -110,7 +110,7 @@ const NavBar = () => {
                   {/** If a user has a photo it will be displayed otherwise the default icon will show up. */}
                  {user.photoURL ? 
                   <img className="navbar-profile-pic" alt="profilePicture" src={user.photoURL}/> :
-                  <img src={profilePic || '/src/assets/images/clients/avater.jpg'} alt="Profile" className="navbar-profile-pic" />
+                  <img src={profilePic || '/images/clients/avater.jpg'} alt="Profile" className="navbar-profile-pic" />
                  }
                  <div className="menu-icon">
                    <span></span>
