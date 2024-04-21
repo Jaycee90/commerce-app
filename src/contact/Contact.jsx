@@ -11,27 +11,21 @@ const btnText = "Send Message";
 
 const contactList = [
     {
-        imgUrl: "/src/assets/images/icon/01.png",
+        imgUrl: "/images/icons/01.png",
         imgAlt: "contact icon",
         title: "School Address",
         desc: "601 University Dr, San Marcos, TX 78666",
     },
     {
-        imgUrl: "/src/assets/images/icon/02.png",
+        imgUrl: "/images/icons/02.png",
         imgAlt: "contact icon",
         title: "Phone number",
         desc: "+5127711378",
     },
     {
-        imgUrl: "/src/assets/images/icon/03.png",
+        imgUrl: "/images/icons/03.png",
         imgAlt: "contact icon",
         title: "Send email",
-        desc: "team9cs4398@gmail.com",
-    },
-    {
-        imgUrl: "/src/assets/images/icon/04.png",
-        imgAlt: "contact icon",
-        title: "Our website",
         desc: "team9cs4398@gmail.com",
     },
 ];
@@ -79,7 +73,39 @@ const Contact = () => {
     <div>
         <PageHeader title={"Get In Touch With Us"} curPage={"Contact Us"}/>
         <div className='map-address-section padding-tb section-bg'>
+
             {/* Your contact information */}
+            <div className="container">
+                <div className='section-header text-center'>
+                    <span className='subtitle'>{subTitle}</span>
+                    <h2 className='title'>{title}</h2>
+                </div>
+
+                <div className='section-wrapper'>
+                    <div className='row flex-row-reverse'>
+                        <div className='col-xl-4 col-lg-5 col-12'>
+                            <div className='contact-wrapper'>
+                                {contactList.map((val, i) => (
+                                    <div key={i} className='contact-item'>
+                                        <div className='contact-thumb'>
+                                            <img src={val.imgUrl} alt={val.imgAlt} />
+                                        </div>
+                                        <div className='contact-content'>
+                                            <h4>{val.title}</h4>
+                                            <p>{val.desc}</p>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/**google map */}
+                        <div className='col-xl-8 col-lg-7 col-12'>
+                            <GoogleMap />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div className='contact-section padding-tb'>
