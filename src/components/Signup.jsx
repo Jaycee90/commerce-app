@@ -92,7 +92,7 @@ export const Signup = () => {
     return (
         <div>
             <NavBar/>
-            <div className='new-login-section'>
+            <div className='new-login-section' style={{backgroundImage:"url('/images/customphotos/background10.jpeg')"}}>
                 <div style={{ marginTop: '60px' }} className="new-container">
                     <div className="new-account-wrapper">
                         <h3 className="new-title">{title}</h3>
