@@ -46,7 +46,7 @@ const Banner = () => {
         }
 
   return (
-    <div className='banner-section style-4' style={{backgroundImage:"url('/src/assets/images/customphotos/background10.jpeg')"}}>
+    <div className='banner-section style-4' style={{backgroundImage:"url('/images/customphotos/background10.jpeg')"}}>
         <div className='container'>
             <div className='banner-content'>
                 {title}

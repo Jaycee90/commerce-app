@@ -110,7 +110,7 @@ const Login = () => {
                         <ul className='new-social-icons'>
                             <li>
                                 <a href="/" className='google-btn' onClick={handleRegister}>
-                                    <img src="src/assets/images/Google-button.png" 
+                                    <img src="/images/Google-button.png" 
                                          alt="Google" style={{verticalAlign: "middle"}}/>
                                     Sign in with Google
                                 </a>
